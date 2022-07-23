@@ -13,3 +13,12 @@ def logo():
     _|    _|  _|    _|  _|    _|_|  _|    _|  _|      _|  _|    _|  _|    _|_|  
     _|    _|  _|    _|  _|      _|    _|_|_|  _|      _|  _|    _|  _|      _| 
     """)
+
+
+def main():
+    """
+    Main function that runs the game
+    """
+    logo()
+
+main()
