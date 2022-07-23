@@ -21,6 +21,23 @@ def get_word():
     word = random.choice(word_list)
     return word.upper()
 
+def menu():
+    """
+    Menu with options to see rules or start game.
+    """
+    print('Press 1 to see the rules')
+    print('Press 2 to start the game')
+
+    option = input('Enter number: \n')
+
+    if option == "1":
+        rules()
+    elif option == "2":
+        play()
+    else:
+        print('Please enter 1 or 2.')
+        menu()
+
 def main():
     """
     Main function that runs the game
