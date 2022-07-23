@@ -1,6 +1,7 @@
 import random
 from words import word_list
 
+
 def logo():
     """
     Game-Logo
@@ -13,6 +14,7 @@ def logo():
     _|    _|  _|    _|  _|    _|_|  _|    _|  _|      _|  _|    _|  _|    _|_|
     _|    _|  _|    _|  _|      _|    _|_|_|  _|      _|  _|    _|  _|      _|
     """)
+
 
 def menu():
     """
@@ -31,9 +33,10 @@ def menu():
         print('Please enter 1 or 2.')
         menu()
 
-def (game_rules):
+
+def game_rules():
     """
-    Rules for the game
+    Rules for the game.
     """
     print('Rules of the game\n')
     print(
@@ -49,24 +52,28 @@ def (game_rules):
     input('Press Enter to return to the menu!\n')
     menu()
 
+
 def get_word():
     """
     Function that gets a random word from words.py.
     """
     word = random.choice(word_list)
+
     return word.upper()
+
 
 def play(word):
     """
     Plays the game.
     Checks if player guessed right or wrong.
+    Credits for inspiration: https://www.youtube.com/watch?v=m4nEnsavl6w
     """
     word_completion = "_" * len(word)
+    print(word_completion)
     guessed = False
-    guessed_letters []
-    guessed_words = []
+    guessed_letters = []
     tries = 6
-    
+
     while not guessed and tries > 0:
         print(f"Already guessed: {guessed_letters}")
         guess = input('Guess a letter:')
@@ -77,7 +84,7 @@ def play(word):
                 print(f"{guess} is not in the word. Try again!")
                 tries -= 1
                 if tries == 0:
-                    print( """
+                    print("""
                     --------
                     |      |
                     |      O
@@ -87,7 +94,7 @@ def play(word):
                     -
                     """)
                 if tries == 1:
-                    print( """
+                    print("""
                     --------
                     |      |
                     |      O
@@ -99,7 +106,7 @@ def play(word):
                     print(f"You have {tries} live(s) left.")
 
                 if tries == 2:
-                    print( """
+                    print("""
                     --------
                     |      |
                     |      O
@@ -111,7 +118,7 @@ def play(word):
                     print(f"You have {tries} live(s) left.")
 
                 if tries == 3:
-                    print( """
+                    print("""
                     --------
                     |      |
                     |      O
@@ -123,7 +130,7 @@ def play(word):
                     print(f"You have {tries} live(s) left.")
 
                 if tries == 4:
-                    print( """
+                    print("""
                     --------
                     |      |
                     |      O
@@ -135,7 +142,7 @@ def play(word):
                     print(f"You have {tries} live(s) left.")
 
                 if tries == 5:
-                    print( """
+                    print("""
                     --------
                     |      |
                     |      O
@@ -147,7 +154,7 @@ def play(word):
                     print(f"You have {tries} live(s) left.")
 
                 if tries == 6:
-                    print( """
+                    print("""
                     --------
                     |      |
                     |
@@ -163,7 +170,9 @@ def play(word):
                 print(f"Nice, {guess} is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [
+                    i for i, letter in enumerate(word) if letter == guess
+                    ]
                 for index in indices:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
@@ -173,11 +182,11 @@ def play(word):
             print("Not a valid guess, please try again!")
         print(word_completion)
         print("\n")
+
     if guessed:
         print("You guessed the word. Congratulations, you win!")
     else:
         print(f"You lose... The word was: {word}.")
-
 
 
 def main():
@@ -189,5 +198,6 @@ def main():
     game_rules()
     word = get_word()
     play(word)
+
 
 main()

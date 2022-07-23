@@ -1,4 +1,7 @@
-# Wordlist for the hangman-game
+"""
+Wordlist for the hangman-game.
+Used in run.py
+"""
 
 word_list = [
     'whip',
