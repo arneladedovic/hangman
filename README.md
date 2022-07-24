@@ -61,3 +61,24 @@ If you already guessed a letter, it will tell you to try another letter.
 * Add design to the game, like color and fix the background. 
 * Add level choices so the player can chose if they want to play an easy level or difficult. 
 * Add a function that ends game in terminal instead of going back to menu. 
+
+## Testing 
+
+I have manually tested this project by doing following:
+* Passed the code through a PEP8 linter and confirmed there are no problems.
+* Tested in my local terminal and the Code Institute Heroku terminal
+
+### Validator testing
+* PEP8 - No errors were returned
+
+
+### Solved bugs
+* I made a function for the variable 'word', but should have instead passed it in an another function. I solved this by passing it to the menu function.
+
+
+## Credits
+
+* Inspiration for building the game: <a href = "https://www.youtube.com/watch?v=m4nEnsavl6w" target="_blank" rel="noopener">here</a>.
+* Logo made by: <a href = "https://www.ascii-art-generator.org/" target="_blank" rel="noopener">here</a>.
+* I want to thank Code Institute and Slack Community for all the help through this project. 
+
