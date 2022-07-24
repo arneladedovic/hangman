@@ -20,3 +20,8 @@ During the planning proccess I made a Flowchart to set the basic steps to help g
 As the game is played in the terminal, no wireframes is made for a visual look. 
 ![Hangman FlowChart image](images/Wireframes.png)
 
+### Design
+
+The game is very limited because of it is played trough the terminal. 
+More information about future design is written under [Future Features](#future-features)
+
