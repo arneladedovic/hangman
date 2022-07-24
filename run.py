@@ -24,6 +24,7 @@ def menu():
     print('Press 2 to start the game')
 
     option = input('Enter number: \n')
+    word = random.choice(word_list)
 
     if option == "1":
         game_rules()
@@ -31,7 +32,7 @@ def menu():
         play(word)
     else:
         print('Please enter 1 or 2.')
-        menu()
+    return menu()
 
 
 def game_rules():
