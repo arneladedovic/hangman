@@ -19,6 +19,7 @@ def logo():
 def menu():
     """
     Menu with options to see rules or start game.
+    'word' variable to get random worlds from the words.py
     """
     print('Press 1 to see the rules')
     print('Press 2 to start the game')
@@ -68,7 +69,7 @@ def play(word):
 
     while not guessed and tries > 0:
         print(f"Already guessed: {guessed_letters}")
-        guess = input('Guess a letter:')
+        guess = input('Guess a letter: ')
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print(f"You have already guessed {guess}. Try another letter!")
@@ -176,9 +177,9 @@ def play(word):
         print("\n")
 
     if guessed:
-        print("You guessed the word. Congratulations, you win!")
+        print("You guessed the word, you win! Lets play again!")
     else:
-        print(f"You lose... The word was: {word}.")
+        print(f"You lose... The word was: {word}. Try again!")
 
 
 def main():
