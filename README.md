@@ -75,6 +75,10 @@ I have manually tested this project by doing following:
 ### Solved bugs
 * I made a function for the variable 'word', but should have instead passed it in an another function. I solved this by passing it to the menu function.
 
+### Deployment
+
+This project was deployed using Cod Insititutes moch terminal for Herouku.
+
 
 ## Credits
 
