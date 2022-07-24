@@ -28,7 +28,7 @@ def menu():
     if option == "1":
         game_rules()
     elif option == "2":
-        play()
+        play(word)
     else:
         print('Please enter 1 or 2.')
         menu()
