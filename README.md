@@ -14,3 +14,9 @@ You can read more about the game <a href = "https://en.wikipedia.org/wiki/Hangma
 * The player wins when the word is guessed and loses if the lives runs out. 
 * If the player wins/loses, the menu will start over. 
 
+### Wireframes/FlowChart
+
+During the planning proccess I made a Flowchart to set the basic steps to help guide my coding process. 
+As the game is played in the terminal, no wireframes is made for a visual look. 
+![Hangman FlowChart image](images/Wireframes.png)
+
